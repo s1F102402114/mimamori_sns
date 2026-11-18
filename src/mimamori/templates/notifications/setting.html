@@ -7,6 +7,8 @@
   <title>お題設定 - 見守りSNS</title>
   <link rel="stylesheet" href="{% static 'mimamori/css/timeline.css' %}">
   <link rel="stylesheet" href="{% static 'mimamori/css/setting.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body class="role-a">
 
@@ -81,6 +83,27 @@
 
             <div class="ns-actions">
               <button type="submit" name="submit_single" class="ns-btn ns-btn-primary ns-btn-wide">この内容で保存</button>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    お題の例
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>今日の空の写真を送ってください。</li>
+                      <li>今食べているものの写真を送ってください。</li>
+                      <li>今の気分を表す写真を送ってください。</li>
+                      <li>今日の服装の写真を送ってください。</li>
+                      <li>今見ている景色の写真を送ってください。</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
